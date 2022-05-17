@@ -15,3 +15,17 @@
 - `npm update`: update minor and patch version (not major releases)
 - `npm uninstall -g <package>`
 - `npm run <scriptName>`: run script defined in package.xml
+
+
+## Express Basics
+```js
+ app = express();
+ app.get('/', (req, res)=>{
+    res.status(200).json("{name: 'soma'}")
+})
+```
+### Response Methods
+- `status(200)`
+- `json(<json>)`
+- `download('server.js')`
+- `render('index')`
