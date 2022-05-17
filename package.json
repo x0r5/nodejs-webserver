@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-webserver",
+  "version": "1.0.0",
+  "description": "Webserver testing",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "run": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebestyen Soma",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
