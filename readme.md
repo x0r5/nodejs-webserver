@@ -14,3 +14,4 @@
 - `npm outdated`: show new releases
 - `npm update`: update minor and patch version (not major releases)
 - `npm uninstall -g <package>`
+- `npm run <scriptName>`: run script defined in package.xml
