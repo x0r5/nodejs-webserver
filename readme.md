@@ -24,6 +24,8 @@
     res.status(200).json("{name: 'soma'}")
 })
 ```
+
+`app.use('/users', router)`: use a router from a separate module 
 ### Response Methods
 - `status(200)`
 - `json(<json>)`
