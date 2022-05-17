@@ -29,3 +29,9 @@
 - `json(<json>)`
 - `download('server.js')`
 - `render('index')`
+
+### EJS syntax
+```html
+Hello <%= 2+2 %>
+Hello <%= locals.text %>
+```
