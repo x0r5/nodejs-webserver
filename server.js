@@ -1,15 +1,14 @@
 const express = require('express');
 const app = express();
+const expressLayouts = require('express-ejs-layouts');
+const indexRouter = require('./routes/index');
 
 app.set('view engine', 'ejs'); //or we can use pug
+app.set('views', __dirname + '/views');
+app.set('layout', 'layouts/layout');
+app.use(expressLayouts);
+app.use(express.static('public'));
 
-app.get('/', (req, res)=>{
-    console.log('Here');
-    res.render("index", {text: 'word'});
-})
+app.use('/', indexRouter);
 
-const userRouter = require('./routes/users.js');
-
-app.use('/users', userRouter);
-
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
