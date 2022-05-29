@@ -2,7 +2,7 @@
   "name": "nodejs-webserver",
   "version": "1.0.0",
   "description": "Webserver testing",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "devStart": "nodemon server.js",
@@ -17,6 +17,7 @@
     "mongoose": "^6.3.4"
   },
   "devDependencies": {
+    "dotenv": "^16.0.1",
     "nodemon": "^2.0.16"
   }
 }
