@@ -2,7 +2,7 @@
 
 ## NPM Commands
 - `npm i <modeule>`
-- `npm i --save-dev <packagename>`
+- `npm i --save-dev <packagename>`: to add as a development dependency only
 - `npm install <packagename>`: to locally install a module
 - `npm install -g <packagename>`: to globally install a module  ( to the node library node_modules folder)
 - `npm install <packagename>@<version>`: install a specified version of a package
