@@ -15,16 +15,17 @@ router.post('/', (req, res)=>{
     res.send('Create user post');
 })
 
-router.get('/:id', (req, res)=>{
-    res.send(`User get: ${req.params.id}`);
-})
+router.route('/:id')
+    .get((req, res)=>{
+        res.send(`User get: ${req.params.id}`);
+    })
 
-router.put('/:id', (req, res)=>{
-    res.send(`Update user with id: ${id}`);
-})
+    .put((req, res)=>{
+        res.send(`Update user with id: ${id}`);
+    })
 
-router.delete('/:id', (req, res)=>{
-    res.send(`Delete user with id: ${id}`);
-})
+    .delete((req, res)=>{
+        res.send(`Delete user with id: ${id}`);
+    })
 
 module.exports = router;
