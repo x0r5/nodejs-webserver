@@ -17,6 +17,7 @@ router.post('/', (req, res)=>{
 
 router.route('/:id')
     .get((req, res)=>{
+        console.log(req.user);
         res.send(`User get: ${req.params.id}`);
     })
 
@@ -26,6 +27,12 @@ router.route('/:id')
 
     .delete((req, res)=>{
         res.send(`Delete user with id: ${id}`);
-    })
+    });
+
+users = [{name: 'Soma'}, {name: 'Bob'}];
+router.param('id', (req, res, next, id)=>{
+    req.user = users[id];
+    next();
+})
 
 module.exports = router;
